@@ -3913,6 +3913,11 @@ postcss@^8.5.6:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+powerglitch@^2.4.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/powerglitch/-/powerglitch-2.5.0.tgz#af5a98eed09ac61ed654120c5375eaf4f9046fd4"
+  integrity sha512-JByDXadAGOT1Vnm8LvANfEfSFDYAUxSDSRXD7wWxy04bD93yf1V+/cYc+fs4kQzZSa0s4ebVQ93xUvPcM3WCng==
+
 powershell-utils@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/powershell-utils/-/powershell-utils-0.1.0.tgz#5a42c9a824fb4f2f251ccb41aaae73314f5d6ac2"
@@ -4734,6 +4739,13 @@ vue-flow-layout@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/vue-flow-layout/-/vue-flow-layout-0.2.0.tgz#3ea4e388a213f23d4653b45255b75b760701cd23"
   integrity sha512-zKgsWWkXq0xrus7H4Mc+uFs1ESrmdTXlO0YNbR6wMdPaFvosL3fMB8N7uTV308UhGy9UvTrGhIY7mVz9eN+L0Q==
+
+vue-powerglitch@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue-powerglitch/-/vue-powerglitch-1.1.0.tgz#03f7226732d1dc05fa633c2b62814a130ee72114"
+  integrity sha512-tLknqtgESJI2leGdAxNM2FL3U2n6WuzYR0vxhPD1N5FmcTiXaJ2l8fWoBCSHpsTtwn2Du6n5/K+3n0l5htPi7g==
+  dependencies:
+    powerglitch "^2.4.0"
 
 vue-resize@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"
