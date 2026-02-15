@@ -191,7 +191,7 @@ erste bekannter digitaler Angriff auf **industrielle Infrastruktur**
   <BrickWallFire class="mb-4" size="36" />
   <div class="text-sm text-gray-400">
 
-verwendete **gestohlene Zertifikate**,<br> und **<span class="font-bold" v-mark.underline.orange="7">4 Zero-Days</span>**
+verwendete **gestohlene Zertifikate**,<br> und **<span v-mark.underline.orange="7">4 Zero-Days</span>**
   </div>
 </div>
 
@@ -217,7 +217,7 @@ import { HatGlasses, DollarSign } from 'lucide-vue-next';
 </div>
 <br>
 
-<div class="grid grid-cols-2 gap-8 mt-12 px-8 text-center">
+<div class="grid grid-cols-2 gap-8 mt-16 px-8 text-center">
   
 <div class="feature-box items-center"
   v-click="1"
@@ -252,44 +252,82 @@ Einen "Zero-Day" zu kennen wird als **glücklich** bezeichnet.
 transition: slide-left
 ---
 
+<script setup>
+import { RouteOff, Shield } from 'lucide-vue-next';
+</script>
+
 # Wofür wurde STUXnet entwickelt?
 
 <div class="mt-12 h-full timeline-window" v-click>
 <div class="timeline"
   v-motion
-    :initial="{ y: '0%' }"
-    :click-5="{ y: '-33.3%' }">
+    :initial="{ y: '0rem' }"
+    :click-5="{ y: '-26rem' }"
+    :click-11="{ y: '-52rem' }">
 
 <div class="timeline-node" v-click="[1, 5]">
-  <div class="mb-4">2002</div>
+  <div class="mb-4">August 2002</div>
   <div class="feature-box">
 
 ### Aufdeckung von Nuklearanlagen
-<span class="text-sm text-gray-400">Eine iranische Wiederstandsgruppe deckt zwei unbekannte iranische Nuklearanlagen auf.</span>
+<div class="text-sm text-gray-400">
+
+Eine iranische Wiederstandsgruppe deckt zwei unbekannte iranische Nuklearanlagen auf<span v-click="3">, Arak und Natanz.</span>
+</div>
+  </div>
+  <br>
+
+  <div class="feature-box" v-click="[4, 5]">
+  
+### Iran baut Atomwaffen?
+<div class="text-sm text-gray-400">
+
+Im Westen wächst die Vermutung das Iran Atomwaffen bauen will, vorallem da der Iran 1968 das Atomabkommen unterzeichnet haben. Wodurch Iran der **IAEA** von denn Analagen hätte erzählen müssen. Eine Untersuchung von der **IAEA** nachträglich offenbart das Natanz hochangereichertes Uran herstellt.
+</div>
   </div>
 </div>
 
-<div class="timeline-node" v-click="4">
-  <div class="mb-4">SOME DATE 2</div>
+<div class="timeline-node" v-click="[5, 11]">
+  <div class="mb-4">2006</div>
   <div class="feature-box">
 
-### Foo 2
-<span class="text-sm text-gray-400">TODO...</span>
+### Olympic Games
+<div class="text-sm text-gray-400">
+
+Die USA und Israel starten mit dem Bau einer Cyberwaffe um das iranische Atomprogramm gezielt zu sabotieren.
+</div>
   </div>
 </div>
 
-<div class="timeline-node" v-click="5">
-  <div class="mb-4">SOME DATE 3</div>
-  <div class="mt-4 feature-box">
+<div class="timeline-node" v-click="[6, 11]">
+  <div class="mb-4">2007</div>
+  <div class="feature-box">
 
-### Foo 3
-<span class="text-sm text-gray-400">TODO...</span>
+### Probleme bei Olympic Games
+<div class="text-sm text-gray-400">
+
+Trotz der Fortschritte von Olympic Games, stellt sich das Problem wie sie den Wurm in die Anlage bekommen. Atomanlagen sind meist aus Sicherheitsgründen <span v-mark.underline.orange="7">"air-gapped"</span>.
+</div>
   </div>
 </div>
-    
+
+<div class="timeline-node" v-click="[11, 15]">
+  <div class="mb-4">FOO DATE</div>
+  <div class="feature-box">
+
+### Foo
+<div class="text-sm text-gray-400">
+
+Foo text...
+</div>
+  </div>
+</div>
+
+
 </div>
 </div>
 
+<!--  -->
 <div class="pop-up"
   v-click="[2, 3]"
   v-motion
@@ -310,7 +348,9 @@ transition: slide-left
 </div>
 
 </div>
+<!--  -->
 
+<!--  -->
 <div class="pop-up ml-80 mt-34"
   v-click="[2, 3]"
   v-motion
@@ -331,6 +371,62 @@ transition: slide-left
 </div>
 
 </div>
+<!--  -->
+
+<!--  -->
+<div class="pop-up size-full"
+  v-click="[8, 11]"
+  v-motion
+    :initial="{ scale: 0 }"
+    :enter="{ scale: 1 }"
+    :leave="{ scale: 0 }">
+
+<div class="feature-box size-full">
+
+<div class="mt-8 text-center">
+
+## Was ist eine "Air-Gap"?
+<div class="text-sm text-gray-400">
+(Netzwerke)
+</div>
+
+</div>
+
+<div class="grid grid-cols-2 gap-8 mt-16 px-8 text-center">
+  
+<div class="feature-box items-center"
+  v-click="9"
+  v-motion
+    :initial="{ x: -100, y: -200, scale: 1.2 }"
+    :enter="{ x: 50, y: 0 }"
+      :click-10="{ x: 0, scale: 1 }">
+  <RouteOff class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
+  <div class="font-bold text-xl mb-2">keine Verbindung</div>
+  <div class="text-sm text-gray-400">
+
+Es besteht **keine physikalische Verbindung** nach Außen, weder per Kabel oder Drahtlos.
+  </div>
+</div>
+  
+<div class="feature-box items-center"
+  v-click="10"
+  v-motion
+    :initial="{ y: 200 }"
+    :enter="{ y: 0 }">
+  <Shield class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
+  <div class="font-bold text-xl mb-2">Sicherheit</div>
+  <div class="text-sm text-gray-400">
+
+Es ist eine **unüberwindbare Hürde** für Angreiffer aus der ferne, und **schließt mögliche Sicherheitslücke** die in Software existieren kann.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<!--  -->
 
 ---
 layout: end
@@ -385,5 +481,8 @@ const glitch = {
 
 - https://www.youtube.com/watch?v=Lc6qNCVHyFo
 - https://www.csoonline.com/article/562691/stuxnet-explained-the-first-known-cyberweapon.html
+- https://2001-2009.state.gov/r/pa/prs/ps/2003/20439.htm
+- https://edition.cnn.com/2002/WORLD/meast/12/13/iran.nuclear/
+- https://www.nytimes.com/2012/06/01/world/middleeast/obama-ordered-wave-of-cyberattacks-against-iran.html?_r=2&smid=tw-nytimes&seid=auto
 
 </div>
