@@ -152,7 +152,7 @@ Ist ein Wurm<span v-click="1" v-motion :initial="{ opacity: 0 }" :enter="{ opaci
     :enter="{ x: '50%' }"
       :click-4="{ x: '0%', y: '0%', scale: 1 }">
   <CircuitBoard class="mb-4" size="36" />
-  <div class="text-sm text-gray-400">
+  <div class="desc">
   
 ungewöhnlich groß und komplex, mit einer Größe von **~600KB**
   </div>
@@ -165,7 +165,7 @@ ungewöhnlich groß und komplex, mit einer Größe von **~600KB**
     :enter="{ x: '-25%', y: '50%' }"
       :click-5="{ x: '0%', y: '0%', scale: 1 }">
   <ClockFading class="mb-4" size="36" />
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
 Entwicklungszeit von **2-3 Jahren** mit einem Team von **10 Personen**
   </div> 
@@ -177,7 +177,7 @@ Entwicklungszeit von **2-3 Jahren** mit einem Team von **10 Personen**
     :initial="{ x: -100 }"
     :enter="{ x: 0 }">
   <Factory class="mb-4" size="36"/>
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
 erste bekannter digitaler Angriff auf **industrielle Infrastruktur**
   </div>
@@ -189,7 +189,7 @@ erste bekannter digitaler Angriff auf **industrielle Infrastruktur**
     :initial="{ y: 100 }"
     :enter="{ y: 0 }">
   <BrickWallFire class="mb-4" size="36" />
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
 verwendete **gestohlene Zertifikate**,<br> und **<span v-mark.underline.orange="7">4 Zero-Days</span>**
   </div>
@@ -210,7 +210,7 @@ import { HatGlasses, DollarSign } from 'lucide-vue-next';
 <div class="mt-8 text-center">
 
 ## Was ist ein "Zero-Day"?
-<div class="text-sm text-gray-400">
+<div class="desc">
 (Sicherheitslücke)
 </div>
 
@@ -227,7 +227,7 @@ import { HatGlasses, DollarSign } from 'lucide-vue-next';
       :click-2="{ x: 0, scale: 1 }">
   <HatGlasses class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
   <div class="font-bold text-xl mb-2">perfekte Tarnung</div>
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
 Ist eine **unbekannte** Sicherheitslücke, und somit haben Entwickler **0 Tage** um sie zu beheben.
   </div>
@@ -240,7 +240,7 @@ Ist eine **unbekannte** Sicherheitslücke, und somit haben Entwickler **0 Tage**
     :enter="{ x: 0 }">
   <DollarSign class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
   <div class="font-bold text-xl mb-2">extrem Wertvoll</div>
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
 Einen "Zero-Day" zu kennen wird als **glücklich** bezeichnet.
   </div>
@@ -262,15 +262,17 @@ import { RouteOff, Shield } from 'lucide-vue-next';
 <div class="timeline"
   v-motion
     :initial="{ y: '0rem' }"
-    :click-5="{ y: '-26rem' }"
-    :click-11="{ y: '-52rem' }">
+    :click-5="{ y: '-25.5rem' }"
+    :click-11="{ y: '-51rem' }"
+    :click-14="{ y: '-38.5rem' }"
+    :click-15="{ y: '-51rem' }">
 
 <div class="timeline-node" v-click="[1, 5]">
   <div class="mb-4">August 2002</div>
   <div class="feature-box">
 
 ### Aufdeckung von Nuklearanlagen
-<div class="text-sm text-gray-400">
+<div class="desc">
 
 Eine iranische Wiederstandsgruppe deckt zwei unbekannte iranische Nuklearanlagen auf<span v-click="3">, Arak und Natanz.</span>
 </div>
@@ -280,7 +282,7 @@ Eine iranische Wiederstandsgruppe deckt zwei unbekannte iranische Nuklearanlagen
   <div class="feature-box" v-click="[4, 5]">
   
 ### Iran baut Atomwaffen?
-<div class="text-sm text-gray-400">
+<div class="desc">
 
 Im Westen wächst die Vermutung das Iran Atomwaffen bauen will, vorallem da der Iran 1968 das Atomabkommen unterzeichnet haben. Wodurch Iran der **IAEA** von denn Analagen hätte erzählen müssen. Eine Untersuchung von der **IAEA** nachträglich offenbart das Natanz hochangereichertes Uran herstellt.
 </div>
@@ -291,72 +293,60 @@ Im Westen wächst die Vermutung das Iran Atomwaffen bauen will, vorallem da der 
   <div class="mb-4">2006</div>
   <div class="feature-box">
 
-### Olympic Games
-<div class="text-sm text-gray-400">
+### Operation: Olympic Games
+<div class="desc">
 
 Die USA und Israel starten mit dem Bau einer Cyberwaffe um das iranische Atomprogramm gezielt zu sabotieren.
 </div>
   </div>
 </div>
 
-<div class="timeline-node" v-click="[6, 11]">
+<div class="timeline-node" v-click="[6, 15]">
   <div class="mb-4">2007</div>
   <div class="feature-box">
 
 ### Probleme bei Olympic Games
-<div class="text-sm text-gray-400">
+<div class="desc">
 
-Trotz der Fortschritte von Olympic Games, stellt sich das Problem wie sie den Wurm in die Anlage bekommen. Atomanlagen sind meist aus Sicherheitsgründen <span v-mark.underline.orange="7">"air-gapped"</span>.
+Trotz der Fortschritte von Olympic Games, stellt sich das Problem wie sie den Wurm in die Anlage Natanz bekommen. Da sie <span v-mark.underline.orange="7">**"air-gapped"**</span> ist aus Sicherheitsgründen.
 </div>
   </div>
 </div>
 
-<div class="timeline-node" v-click="[11, 15]">
-  <div class="mb-4">FOO DATE</div>
+<div class="timeline-node" v-click="11">
+  <div class="mb-4">Juni 2009</div>
   <div class="feature-box">
 
-### Foo
-<div class="text-sm text-gray-400">
+### Olympic Games startet
+<div class="desc">
 
-Foo text...
+STUXnet gelangt in die Analage Natanz, über kompromittierte Zuliefer oder Wartungstechniker.
 </div>
   </div>
 </div>
 
+<div class="timeline-node" v-click="12">
+  <div class="mb-4">Juni 2010</div>
+  <div class="feature-box">
+
+### Olympic Games wurde gefunden
+<div class="desc">
+
+STUXnet wird entdeckt, <span v-mark.underline.orange="13">aber außerhalb von Natanz</span>, bei einer IT-Sicherheitsfirma.<br> Der Name "STUXnet" oder "Stuxnet" setzt sich zusammen aus gefunden Wörtern im Code.
+</div>
+  </div>
+</div>
 
 </div>
 </div>
 
 <!--  -->
-<div class="pop-up"
+<div class="pop-up p-4 ml-80 mt-34"
   v-click="[2, 3]"
   v-motion
-    :initial="{ scale: 0.5 }"
+    :initial="{ scale: 0 }"
     :enter="{ scale: 1 }"
-    :leave="{ scale: 0.5 }">
-
-<div>
-
-<LocationBanner>
-
-**Arak**
-
-</LocationBanner>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Arak_Heavy_Water4.JPG/1920px-Arak_Heavy_Water4.JPG" class="h-sm rounded-lg border-2 border-solid border-[--slidev-theme-primary]" />
-
-</div>
-
-</div>
-<!--  -->
-
-<!--  -->
-<div class="pop-up ml-80 mt-34"
-  v-click="[2, 3]"
-  v-motion
-    :initial="{ scale: 0, transition: { delay: 0 } }"
-    :enter="{ scale: 1, transition: { delay: 1000 } }"
-    :leave="{ scale: 0, transition: { delay: 0 } }">
+    :leave="{ scale: 0 }">
 
 <div>
 
@@ -374,19 +364,42 @@ Foo text...
 <!--  -->
 
 <!--  -->
-<div class="pop-up size-full"
+<div class="pop-up p-4"
+  v-click="[2, 3]"
+  v-motion
+    :initial="{ scale: 0, transition: { delay: 0 } }"
+    :enter="{ scale: 1, transition: { delay: 400 } }"
+    :leave="{ scale: 0, transition: { delay: 0 } }">
+
+<div>
+
+<LocationBanner>
+
+**Arak**
+
+</LocationBanner>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Arak_Heavy_Water4.JPG/1920px-Arak_Heavy_Water4.JPG" class="h-sm rounded-lg border-2 border-solid border-[--slidev-theme-primary]" />
+
+</div>
+
+</div>
+<!--  -->
+
+<!--  -->
+<div class="pop-up p-2 size-full"
   v-click="[8, 11]"
   v-motion
     :initial="{ scale: 0 }"
     :enter="{ scale: 1 }"
     :leave="{ scale: 0 }">
 
-<div class="feature-box size-full">
+<div class="border border-[--slidev-theme-primary] rounded-xl bg-[#121212] p-4 size-full">
 
 <div class="mt-8 text-center">
 
 ## Was ist eine "Air-Gap"?
-<div class="text-sm text-gray-400">
+<div class="desc">
 (Netzwerke)
 </div>
 
@@ -402,12 +415,12 @@ Foo text...
       :click-10="{ x: 0, scale: 1 }">
   <RouteOff class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
   <div class="font-bold text-xl mb-2">keine Verbindung</div>
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
-Es besteht **keine physikalische Verbindung** nach Außen, weder per Kabel oder Drahtlos.
+Es besteht **keine physikalische Verbindung** nach Außen, weder Drahtlos noch per Kabel.
   </div>
 </div>
-  
+
 <div class="feature-box items-center"
   v-click="10"
   v-motion
@@ -415,9 +428,9 @@ Es besteht **keine physikalische Verbindung** nach Außen, weder per Kabel oder 
     :enter="{ y: 0 }">
   <Shield class="mb-4 text-color-[--slidev-theme-primary]" size="48" />
   <div class="font-bold text-xl mb-2">Sicherheit</div>
-  <div class="text-sm text-gray-400">
+  <div class="desc">
 
-Es ist eine **unüberwindbare Hürde** für Angreiffer aus der ferne, und **schließt mögliche Sicherheitslücke** die in Software existieren kann.
+Es ist eine **unüberwindbare Hürde** für Angreiffer aus der ferne, und **schließt mögliche Sicherheitslücken** welche in Software existieren können.
   </div>
 </div>
 
@@ -427,6 +440,80 @@ Es ist eine **unüberwindbare Hürde** für Angreiffer aus der ferne, und **schl
 
 </div>
 <!--  -->
+
+---
+
+<script setup>
+import { Worm, HatGlasses, RotateCw, Joystick } from 'lucide-vue-next';
+</script>
+
+# Was macht STUXnet?
+
+<div class="grid grid-cols-2 gap-8 p-8 relative">
+  
+  <div v-click class="feature-box">
+    <div class="step-num">1</div>
+<div class="flex flex-row gap-4">
+<Worm class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+
+### Infizierung
+</div>
+<div class="desc">
+
+STUXnet gelangt in ein System und sucht nach einer bestimmte Software **"Siemens-Step 7"**.
+</div>
+  </div>
+
+  <div v-click class="feature-box">
+    <div class="step-num">2</div>
+<div class="flex flex-row gap-4">
+<HatGlasses class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+
+### Beobachtung
+</div>
+<div class="desc">
+STUXnet zeichnet den normalen Betrieb auf, für längere Zeit.
+</div>
+  </div>
+  
+  <div v-click class="feature-box">
+    <div class="step-num">3</div>
+<div class="flex flex-row gap-4">
+<RotateCw class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+
+### Tarnung
+</div>
+
+<div class="desc">
+Das aufgezeichnete normal Verhalten von Messwerten werden an den Kontrollraum weitergegeben, statt den eingentlichen Daten. 
+</div>
+  </div>
+
+  <div v-click class="feature-box">
+    <div class="step-num">4</div>
+<div class="flex flex-row gap-4">
+<Joystick class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+
+### Manipulation
+</div>
+
+<div class="desc">
+
+STUXnet steuert die **Frequenzumricherter** an, welche die **Geschwindigkeit der Zentrifugen** steuern. 
+</div>
+  </div>
+</div>
+
+<style>
+.feature-box {
+  @apply relative items-center;
+}
+
+.feature-box .step-num {
+  @apply absolute -top-3 -left-3 w-8 h-8 bg-[--slidev-theme-primary] text-white rounded-full 
+         flex items-center justify-center text-base font-bold shadow-2xl;
+}
+</style>
 
 ---
 layout: end
