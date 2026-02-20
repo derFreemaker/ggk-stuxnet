@@ -456,11 +456,11 @@ import { Worm, HatGlasses, RotateCw, Joystick } from 'lucide-vue-next';
   <div v-click class="feature-box">
     <div class="step-num">1</div>
 <div class="flex flex-row gap-4">
-<Worm class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+<Worm class="text-color-[--slidev-theme-primary]" size="36" />
 
 ### Infizierung
 </div>
-<div class="desc">
+<div class="desc mt-4">
 
 STUXnet gelangt in ein System und sucht nach einer bestimmte Software **"Siemens-Step 7"**.
 </div>
@@ -469,11 +469,11 @@ STUXnet gelangt in ein System und sucht nach einer bestimmte Software **"Siemens
   <div v-click class="feature-box">
     <div class="step-num">2</div>
 <div class="flex flex-row gap-4">
-<HatGlasses class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+<HatGlasses class="text-color-[--slidev-theme-primary]" size="36" />
 
 ### Beobachtung
 </div>
-<div class="desc">
+<div class="desc mt-4">
 STUXnet zeichnet über längere Zeit den normalen Betrieb auf.
 </div>
   </div>
@@ -481,12 +481,12 @@ STUXnet zeichnet über längere Zeit den normalen Betrieb auf.
   <div v-click class="feature-box">
     <div class="step-num">3</div>
 <div class="flex flex-row gap-4">
-<RotateCw class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+<RotateCw class="text-color-[--slidev-theme-primary]" size="36" />
 
 ### Tarnung
 </div>
 
-<div class="desc">
+<div class="desc mt-4">
 Das aufgezeichnete Normalverhalten von Messwerten wird an den Kontrollraum weitergegeben, statt den eingentlichen Daten. 
 </div>
   </div>
@@ -494,12 +494,12 @@ Das aufgezeichnete Normalverhalten von Messwerten wird an den Kontrollraum weite
   <div v-click class="feature-box">
     <div class="step-num">4</div>
 <div class="flex flex-row gap-4">
-<Joystick class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+<Joystick class="text-color-[--slidev-theme-primary]" size="36" />
 
 ### Manipulation
 </div>
 
-<div class="desc">
+<div class="desc mt-4">
 
 STUXnet steuert die **Frequenzumricherter** an, welche die **Geschwindigkeit der Zentrifugen** steuern.
 </div>
@@ -528,7 +528,7 @@ Manipulation:
 -->
 
 ---
-transition: slide-up
+transition: slide-left
 layout: image-left
 image: https://cdn.prod.www.spiegel.de/images/1ea2ca16-0001-0004-0000-000000166478_w960_r1.778_fpx28.91_fpy50.webp
 ---
@@ -568,17 +568,69 @@ import { Check } from 'lucide-vue-next';
     :enter="{ x: 0, y: 0 }">
 
 <div class="flex flex-row gap-4">
-<Check class="mb-4 text-color-[--slidev-theme-primary]" size="36" />
+<Check class="text-color-[--slidev-theme-primary]" size="36" />
 
 ## Erfolg?
 </div>
 
-<div class="desc"
+<div class="desc mt-4"
   v-click="4">
 
 Die Anlage wurde erfolgreich **sabortiert**, auch wenn nicht für so lange wie vielleicht geplant.
 Es war nicht die Idee sie **ganz zu zerstören**, sondern nur zu verlangsamen.
 </div>
+</div>
+
+---
+transition: slide-left
+---
+
+# War Deutschland beteiligt?
+<br>
+
+<div class="flex flex-col gap-8">
+
+<div class="feature-box flex flex-row p-0 overflow-hidden"
+  v-click="1"
+  v-motion
+    :initial="{ x: -100, y: '100%', scale: 1.05 }"
+    :enter="{ x: 0, y: '50%' }"
+    :click-2="{ y: '0%', scale: 1 }">
+
+<img src="https://www.designtagebuch.de/wp-content/uploads/mediathek//2024/03/bundesnachrichtendienst-bnd-logo.jpg" class="w-30%"/>
+
+<div class="size-full p-6">
+
+## Operation "Olympic Games"
+<div class="desc mt-4">
+
+**Der Bundesnachrichtendienst (BND)** soll **involviert** gewesen sein, jedoch wie alle anderen **nicht bestätigt**.
+</div>
+</div>
+
+</div>
+
+<div class="feature-box flex flex-row p-0 overflow-hidden"
+  v-click="2"
+  v-motion
+    :initial="{ y: 100 }"
+    :enter="{ y: 0 }">
+
+<img src="https://www.gspeakers.com/wp-content/uploads/2018/03/langner-260x330.jpg" class="w-30%"/>
+
+<div class="size-full p-6">
+
+## Forscher
+<div class="desc mt-4">
+
+**Ralph Langner** (links) und **Frank Rieger** (rechts) sind zwei der bekannten ersten deutschen Forscher. **Ralph Langer** wird auch als Experte für STUXnet interviewt.
+</div>
+</div>
+
+<img src="https://cre.fm/files/2021/03/frank-rieger.jpg" class="w-35%"/>
+
+</div>
+
 </div>
 
 ---
@@ -632,7 +684,7 @@ const glitch = {
 
 # Sources:
 
-<div class="text-sm">
+<div class="text-xs">
 
 - https://www.youtube.com/watch?v=Lc6qNCVHyFo
 - https://www.csoonline.com/article/562691/stuxnet-explained-the-first-known-cyberweapon.html
@@ -640,5 +692,6 @@ const glitch = {
 - https://edition.cnn.com/2002/WORLD/meast/12/13/iran.nuclear/
 - https://www.nytimes.com/2012/06/01/world/middleeast/obama-ordered-wave-of-cyberattacks-against-iran.html?_r=2&smid=tw-nytimes&seid=auto
 - https://www.spiegel.de/politik/ausland/atomstreit-iran-brueskiert-den-westen-mit-neuen-uran-plaenen-a-664126.html
+- https://www.researchgate.net/publication/267156195_Stuxnet_A_new_Cyberwar_weapon_Analysis_from_a_technical_point_of_view
 </div>
 </div>
