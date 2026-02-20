@@ -6,7 +6,7 @@ colorSchema: dark
 mdc: true
 progress: true
 
-title: Stuxnet
+title: STUXnet
 transition: slide-up
 class: text-center
 hideInToc: true
@@ -284,7 +284,7 @@ Eine iranische Wiederstandsgruppe deckt zwei unbekannte iranische Nuklearanlagen
 ### Iran baut Atomwaffen?
 <div class="desc">
 
-Im Westen wächst die Vermutung das Iran Atomwaffen bauen will, vorallem da der Iran 1968 das Atomabkommen unterzeichnet haben. Wodurch Iran der **IAEA** von denn Analagen hätte erzählen müssen. Eine Untersuchung von der **IAEA** nachträglich offenbart das Natanz hochangereichertes Uran herstellt.
+Im Westen wächst die Vermutung das Iran Atomwaffen bauen will, vor allem da der Iran 1968 das Atomabkommen unterzeichnet haben. Wodurch Iran der **IAEA** von denn Analagen hätte erzählen müssen. Eine Untersuchung von der **IAEA** nachträglich offenbart das Natanz hochangereichertes Uran herstellt.
 </div>
   </div>
 </div>
@@ -320,7 +320,7 @@ Trotz der Fortschritte von Olympic Games, stellt sich das Problem wie sie den Wu
 ### Olympic Games startet
 <div class="desc">
 
-STUXnet gelangt in die Analage Natanz, über kompromittierte Zuliefer oder Wartungstechniker.
+STUXnet gelangt in die Anlage Natanz, über kompromittierte Zulieferer oder Wartungstechniker.
 </div>
   </div>
 </div>
@@ -430,7 +430,7 @@ Es besteht **keine physikalische Verbindung** nach Außen, weder Drahtlos noch p
   <div class="font-bold text-xl mb-2">Sicherheit</div>
   <div class="desc">
 
-Es ist eine **unüberwindbare Hürde** für Angreiffer aus der ferne, und **schließt mögliche Sicherheitslücken** welche in Software existieren können.
+Es ist eine **unüberwindbare Hürde** für Angreifer aus der ferne, und **schließt mögliche Sicherheitslücken** welche in Software existieren können.
   </div>
 </div>
 
@@ -487,7 +487,7 @@ STUXnet zeichnet über längere Zeit den normalen Betrieb auf.
 </div>
 
 <div class="desc mt-4">
-Das aufgezeichnete Normalverhalten von Messwerten wird an den Kontrollraum weitergegeben, statt den eingentlichen Daten. 
+Das aufgezeichnete Normalverhalten von Messwerten wird an den Kontrollraum weitergegeben, statt den realen Messwerten. 
 </div>
   </div>
 
@@ -576,7 +576,7 @@ import { Check } from 'lucide-vue-next';
 <div class="desc mt-4"
   v-click="4">
 
-Die Anlage wurde erfolgreich **sabortiert**, auch wenn nicht für so lange wie vielleicht geplant.
+Die Anlage wurde erfolgreich **sabotiert**, auch wenn nicht für so lange wie vielleicht geplant.
 Es war nicht die Idee sie **ganz zu zerstören**, sondern nur zu verlangsamen.
 </div>
 </div>
