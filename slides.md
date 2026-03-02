@@ -263,9 +263,7 @@ import { RouteOff, Shield } from 'lucide-vue-next';
   v-motion
     :initial="{ y: '0rem' }"
     :click-5="{ y: '-25.5rem' }"
-    :click-11="{ y: '-51rem' }"
-    :click-14="{ y: '-38.5rem' }"
-    :click-15="{ y: '-51rem' }">
+    :click-11="{ y: '-51rem' }">
 
 <div class="timeline-node" v-click="[1, 5]">
   <div class="mb-4">August 2002</div>
@@ -301,7 +299,7 @@ Die USA und Israel starten mit dem Bau einer Cyberwaffe um das iranische Atompro
   </div>
 </div>
 
-<div class="timeline-node" v-click="[6, 15]">
+<div class="timeline-node" v-click="[6, 11]">
   <div class="mb-4">2007</div>
   <div class="feature-box">
 
@@ -564,8 +562,9 @@ import { Check } from 'lucide-vue-next';
 <div class="feature-box"
   v-click="3"
   v-motion
-    :initial="{ x: 100, y: 100 }"
-    :enter="{ x: 0, y: 0 }">
+    :initial="{ x: 100, y: 100, 'border-color': 'transparent' }"
+    :enter="{ x: 0, y: 0 }"
+    :click-4="{ 'border-color': 'var(--slidev-theme-primary)' }">
 
 <div class="flex flex-row gap-4">
 <Check class="text-color-[--slidev-theme-primary]" size="36" />
@@ -622,8 +621,13 @@ transition: slide-left
 
 ## Forscher
 <div class="desc mt-4">
+<div class="text-center text-lg">
 
-**Ralph Langner** (links) und **Frank Rieger** (rechts) sind zwei der bekannten ersten deutschen Forscher. **Ralph Langer** wird auch als Experte für STUXnet interviewt.
+<- **Ralph Langner** und **Frank Rieger** ->
+</div>
+<br>
+
+sind zwei der bekannten ersten deutschen Forscher die STUXnet untersucht haben.
 </div>
 </div>
 
@@ -632,6 +636,31 @@ transition: slide-left
 </div>
 
 </div>
+
+---
+transition: fade
+---
+
+# Schüleraufgabe
+<br>
+
+<div class="feature-box">
+
+## Sind Cyberangriffe besser als konventionelle militärische Einsätze?
+
+<div class="desc mt-6">
+
+- Wenn Ja, warum? Oder wieso nicht?
+- Welche Vorteile und Nachteile haben sie?
+
+</div>
+</div>
+
+---
+layout: iframe
+zoom: 0.5
+url: ./simulation.html
+---
 
 ---
 layout: end
